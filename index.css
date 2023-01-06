@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+
+#increment-btn{
+    background-color: red;
+    color: white;
+    margin-top: 10;
+    margin-bottom: 20;
+    size: 50px;
+}

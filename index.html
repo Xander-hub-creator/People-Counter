@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peope counter</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js" defer></script>
+    <script type="module" defer>
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBIfOFpstErOHkqmBzNNl0wwc8qCLTlEgs",
+          authDomain: "people-counter-2625b.firebaseapp.com",
+          projectId: "people-counter-2625b",
+          storageBucket: "people-counter-2625b.appspot.com",
+          messagingSenderId: "322481872079",
+          appId: "1:322481872079:web:22001d0d3adcf38457abba",
+          measurementId: "G-TNCR01W2RC"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+    <h1>People Entered</h1>
+    <h2 id="count-el">0</h2>
+    <button id="increment-btn">INCREMENT</button>
+    <button id="save-btn">SAVE</button>
+    <p id="save-el">People Entered:</p>
+</body>
+</html>
